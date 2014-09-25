@@ -42,6 +42,9 @@ ActiveRecord::Schema.define(version: 20140829010345) do
     t.string   "email"
     t.string   "password_digest"
     t.integer  "tier"
+    t.float    "win_pct"
+    t.integer  "wins"
+    t.integer  "losses"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

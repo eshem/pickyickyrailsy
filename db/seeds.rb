@@ -4,7 +4,7 @@ a = [true, false]
 a.sample
 
 5.times do 
-	User.create(name: Faker::Name.name, email: Faker::Internet.email, password: 'eric', tier: 0)
+	User.create(name: Faker::Name.name, email: Faker::Internet.email, password: 'eric', tier: 0, wins: 10, losses: 20)
 end
 
 User.create(name: "Admin", email: "admin@admin.com", password: "eric", tier: 1)

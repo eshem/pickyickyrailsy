@@ -4,7 +4,8 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
-    @games = Game.all
+    @games = Game.where(week: 1)
+    @pick = Pick.new
   end
 
   # GET /games/1
