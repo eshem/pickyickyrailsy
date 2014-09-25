@@ -5,6 +5,7 @@ class CreateGames < ActiveRecord::Migration
       t.string :team2
       t.integer :spread
       t.integer :week
+      t.string :winning_team
 
       t.timestamps
     end

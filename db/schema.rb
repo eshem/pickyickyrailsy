@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140829012721) do
+ActiveRecord::Schema.define(version: 20140829010345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140829012721) do
     t.string   "team2"
     t.integer  "spread"
     t.integer  "week"
+    t.string   "winning_team"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,9 +41,9 @@ ActiveRecord::Schema.define(version: 20140829012721) do
     t.string   "team_name"
     t.string   "email"
     t.string   "password_digest"
+    t.integer  "tier"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "tier"
   end
 
 end
